@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.snowdog.aniolstudentauep.fragment.FilterFragment">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:text="FILTR"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:background="@color/green"
+            android:textColor="@color/light_text"
+            />
+
+        <CheckBox
+            android:id="@+id/students"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Studenci"
+            />
+
+        <CheckBox
+            android:id="@+id/absolvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Absolwenci"
+            />
+
+        <CheckBox
+            android:id="@+id/common_interests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wspólne zainteresowania"
+            />
+
+        </LinearLayout>
+
+    <ListView
+        android:id="@+id/interests"
+        android:choiceMode="multipleChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@+id/footer"></ListView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:textColor="@color/light_text"
+            android:text="ANULUJ"/>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:textColor="@color/light_text"
+            android:text="OK"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

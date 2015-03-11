@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="320dp"
+    android:minWidth="320dp"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="pl.snowdog.aniolstudentauep.dialog.LoginDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Zaloguj przez:"
+        android:layout_marginBottom="@dimen/margin_small"/>
+    <ImageButton
+        android:id="@+id/btn_facebook"
+        android:background="@drawable/button_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_small"/>
+    <ImageButton
+        android:id="@+id/btn_linkedin"
+        android:background="@drawable/button_linked_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_small"/>
+    <ImageButton
+        android:id="@+id/btn_google_plus"
+        android:background="@drawable/button_google_plus"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

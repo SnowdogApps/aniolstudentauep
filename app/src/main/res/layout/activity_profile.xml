@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="pl.snowdog.aniolstudentauep.ProfileActivity"
+    android:background="@color/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/bartek"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    />
+
+
+                <RatingBar
+                    android:id="@+id/stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/avatar"
+                    android:layout_centerHorizontal="true"
+                    style="@style/greenRatingBar"
+                    android:rating="4"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:max="5"
+                    android:isIndicator="true"
+                    android:gravity="center"/>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@color/bg_darker">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stars"
+                    android:layout_centerHorizontal="true"
+                    android:text="Bartek"
+                    android:textSize="24sp"
+                    android:textColor="@color/dark_text"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:id="@+id/surname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/name"
+                    android:text="Kwiatkowski"
+                    android:textSize="24sp"
+                    android:textColor="@color/dark_text"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Angel"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_text"
+                    android:textStyle="normal"/>
+
+                <LinearLayout
+                    android:id="@+id/tags1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toRightOf="@+id/avatar"
+                    android:layout_below="@+id/surname"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tag1"
+                        android:text="kariera"
+                        style="@style/tag" />
+                    <TextView
+                        android:id="@+id/tag2"
+                        style="@style/tag"
+                        android:text="księgowość"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tags2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toRightOf="@+id/avatar"
+                    android:layout_below="@+id/tags1"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/tag3"
+                        style="@style/tag"
+                        android:text="praktyki"/>
+                    <TextView
+                        android:id="@+id/tag4"
+                        style="@style/tag"
+                        android:text="własna działalność"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tags3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/avatar"
+                    android:layout_below="@+id/tags2"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/tag5"
+                        style="@style/tag"
+                        android:text="praktyki"/>
+                    <TextView
+                        android:id="@+id/tag6"
+                        style="@style/tag"
+                        android:text="własna działalność"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/contact_request"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="Wysłano prośbę o kontakt"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_text"
+                    android:textStyle="normal"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/contact_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="tel: 123 456 789"
+                        android:textSize="20sp"
+                        android:textColor="@color/dark_text"
+                        android:textStyle="normal"
+                        />
+
+                    <TextView
+                        android:id="@+id/mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="e-mail: bartek@snowdog.pl"
+                        android:textSize="20sp"
+                        android:textColor="@color/dark_text"
+                        android:textStyle="normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Doświadczenie"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textColor="@color/dark_text"
+                android:textStyle="normal"/>
+
+            <ListView
+                android:id="@+id/experience_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/contact"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_mail"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
